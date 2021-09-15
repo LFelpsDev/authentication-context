@@ -24,6 +24,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <form onSubmit={handleSubmitForm} className={styles.form}>
         <input
+          className={styles.input}
           type="email"
           placeholder="E-Mail"
           value={email}
@@ -31,13 +32,14 @@ const Home: NextPage = () => {
         />
 
         <input
+          className={styles.input}
           type="password"
           placeholder="Senha"
           value={password}
           onChange={e => setPassword(e.target.value)}
         />
 
-        <button type="submit">Enviar</button>
+        <button className={styles.button} type="submit">Enviar</button>
       </form>
     </div>
   )
